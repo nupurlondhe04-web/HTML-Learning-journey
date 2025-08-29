@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>My HTML Learning Journey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #1c2331;
+      --panel: #2a3447;
+      --header: #111827;
+      --gold: #ffd700;
+      --text: #f5f5f5;
+      --soft: #eaeaea;
+    }
+    body { margin:0; font-family: Arial, Helvetica, sans-serif; background: var(--bg); color: var(--text); }
+    header { background: var(--header); padding: 2rem 1rem; border-bottom: 2px solid var(--gold); text-align:center; }
+    header h1 { color: var(--gold); margin: 0 0 .75rem 0; }
+    header p { color: var(--soft); margin: 0 auto; max-width: 800px; }
+    main { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+    .card { background: var(--panel); padding: 1.25rem; border-radius: 12px; margin-bottom: 1rem; }
+    nav a { color: var(--gold); text-decoration: none; font-weight: 600; }
+    nav a + a { margin-left: 1rem; }
+    nav a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My HTML Learning Journey</h1>
+    <p>Explore my small practice projects and demos. Use the links below to open each page.</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Pages</h2>
+      <nav>
+        <!-- Update filenames here if yours differ -->
+        <a href="pavbhaji.html">Pav Bhaji Project</a>
+        <a href="videos.html">Tech Videos (3-minute demos)</a>
+      </nav>
+    </div>
+  </main>
+</body>
+</html>
