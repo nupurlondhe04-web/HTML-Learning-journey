@@ -1,46 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Pav Bhaji Recipe</title>
-    <meta charset="UTF-8"/>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Pav Bhaji Recipe</title>
+  <style>
+    :root {
+      --bg: #fdf6e3;
+      --panel: #ffffff;
+      --header: #c0392b;
+      --accent: #e67e22;
+      --text: #2c3e50;
+      --soft: #7f8c8d;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--header);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 0.75rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.1rem;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .card {
+      background: var(--panel);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: var(--accent);
+      margin-top: 0;
+    }
+
+    ul, ol {
+      padding-left: 1.5rem;
+    }
+
+    figure {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    figure img {
+      border-radius: 12px;
+      max-width: 70%;
+      height: auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    figcaption {
+      margin-top: 0.5rem;
+      color: var(--soft);
+      font-style: italic;
+    }
+  </style>
+</head>
 <body>
-  <h1 style="color: red;">Pav Bhaji Recipe</h1>
-  <p style="color: hotpink;">
-    Pav Bhaji is an Indian food recipe that has all vegetables smashed and is flavoured using different spices. 
-    Here we will learn how to cook Pav Bhaji using basic and home-available vegetables. 
-    Feel free to skip any veggie if you want. ( ^_^ )
-  </p>
 
-  <h2 style="color: purple;">Ingredients</h2>
-  <ul style="color: brown;">
-    <li>Potatoes</li>
-    <li>Onion</li>
-    <li>Cauliflower</li>
-    <li>Green Peas</li>
-    <li>Coriander (for garnishing)</li>
-    <li>Tomato</li>
-    <li>Carrots</li>
-    <li>Pav Bhaji Masala</li>
-    <li>Necessary Spices</li>
-  </ul>
+  <header>
+    <h1>Pav Bhaji Recipe</h1>
+    <p>
+      Pav Bhaji is a famous Indian street food made by mashing mixed vegetables and cooking them in a spicy, buttery gravy. 
+      It is served with soft bread rolls toasted in butter — a delicious and comforting meal loved by many.
+    </p>
+  </header>
 
-  <h2 style="color: purple;">Instructions</h2>
-  <ol style="color: darkblue; line-height: 1.8;">
-    <li>Add some oil in pan / pressure cooker and sauté onion till golden brown.</li>
-    <li>Then add tomatoes and sauté them for approximately 2–3 mins. Then add all available veggies like Cauliflower, Green Peas, Carrots, etc.</li>
-    <li>Sauté a bit and add 1½ cups of water. Close the lid of the pan or pressure cooker and let it cook for 20 mins.</li>
-    <li>In another pan, take some oil, then add ginger-garlic paste to it, then sauté some onion until golden brown.</li>
-    <li>Add spices such as turmeric, salt, chili powder, coriander powder, cumin powder, and then add the cooked mixture after smashing it into a fine paste.</li>
-    <li>Stir it for a bit, add water according to your preferred thickness, and adjust salt to taste.</li>
-    <li>Now your pav bhaji is ready to eat. Garnish it with some coriander and eat with delight.</li>
-    <li>If possible, add some raw onion and coriander before eating. It brings out the authentic taste.</li>
-  </ol>
+  <main>
+    <div class="card">
+      <h2>Ingredients</h2>
+      <ul>
+        <li>Potatoes</li>
+        <li>Onion</li>
+        <li>Cauliflower</li>
+        <li>Green Peas</li>
+        <li>Coriander (for garnishing)</li>
+        <li>Tomato</li>
+        <li>Carrots</li>
+        <li>Pav Bhaji Masala</li>
+        <li>Necessary Spices</li>
+      </ul>
+    </div>
 
-  <figure>
-    <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2021/04/pav-bhaji-1.jpg" 
-         alt="Delicious Pav Bhaji served hot." width="300">
-    <figcaption style="color: darkred;">Delicious <em>Pav Bhaji</em> served hot.</figcaption>
-  </figure>
+    <div class="card">
+      <h2>Instructions</h2>
+      <ol>
+        <li>Sauté onion in oil until golden brown.</li>
+        <li>Add tomatoes, then mix in all chopped vegetables (cauliflower, peas, carrots, etc.).</li>
+        <li>Add water and cook for about 20 minutes.</li>
+        <li>Prepare a tempering with oil, onion, and ginger-garlic paste, then mix in the cooked veggies.</li>
+        <li>Add spices (turmeric, chili powder, coriander powder, cumin powder, pav bhaji masala).</li>
+        <li>Smash into a smooth mixture, adjust thickness with water, and season with salt.</li>
+        <li>Garnish with fresh coriander and serve hot with pav.</li>
+      </ol>
+    </div>
+
+    <figure>
+      <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2021/04/pav-bhaji-1.jpg" 
+           alt="Delicious Pav Bhaji served hot.">
+      <figcaption>Delicious <em>Pav Bhaji</em> served hot with buttered pav.</figcaption>
+    </figure>
+  </main>
+
 </body>
 </html>
